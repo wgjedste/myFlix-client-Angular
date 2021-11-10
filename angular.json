@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,13 +100,34 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/myFlix-client-Angular",
+            "netlifyToken": "WAUlNYabByD_SNVtwoBp5xiYpFqslo0hHBST-YHtElw",
+            "siteId": "a345fc2c-7639-463c-91d3-863fc795f0e4"
           }
         }
       }
     }
   },
-  "defaultProject": "myFlix-client-Angular"
+  "defaultProject": "myFlix-client-Angular",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
