@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+/**Displays Information Regarding Specific Director */
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-director-dialog',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectorDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    @Inject(MAT_DIALOG_DATA)
+    public data: {
+      name: string;
+      bio: string;
+      birth: Date;
+      death: Date;
+    }
+  ) { }
 
   ngOnInit(): void {
   }
-
 }
+
