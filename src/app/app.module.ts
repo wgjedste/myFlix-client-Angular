@@ -38,10 +38,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    // UserRegistrationFormComponent,
-    // UserLoginFormComponent,
+    UserRegistrationFormComponent,
+    UserLoginFormComponent,
     MovieCardComponent,
-    // WelcomePageComponent,
+    WelcomePageComponent,
     UserProfileComponent,
     DetailsDialogComponent,
     GenreDialogComponent,
