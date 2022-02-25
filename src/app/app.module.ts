@@ -14,11 +14,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-// import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
-// import { UserLoginFormComponent } from './user-login-form/user-login-form.component';
+import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
+import { UserLoginFormComponent } from './user-login-form/user-login-form.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MovieCardComponent } from './movie-card/movie-card.component';
-// import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DetailsDialogComponent } from './details-dialog/details-dialog.component';
 import { GenreDialogComponent } from './genre-dialog/genre-dialog.component';
@@ -29,7 +29,7 @@ import { UpdateProfileComponent } from './update-profile/update-profile.componen
 
 
 const appRoutes: Routes = [
-  // { path: 'welcome', component: WelcomePageComponent },
+  { path: 'welcome', component: MovieCardComponent },
   { path: 'movies', component: MovieCardComponent },
   { path: 'profile', component: UserProfileComponent },
   { path: '', redirectTo: 'movies', pathMatch: 'prefix' },
