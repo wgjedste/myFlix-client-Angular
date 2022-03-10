@@ -24,7 +24,7 @@ export class UserLoginFormComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-  }
+  },
 
   /**
    * This is the function responsible for sending the form inputs to the backend and routing the user to the 'movie-card' view after login
