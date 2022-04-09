@@ -29,7 +29,7 @@ import { UpdateProfileComponent } from './update-profile/update-profile.componen
 
 
 const appRoutes: Routes = [
-  { path: 'welcome', component: UserLoginFormComponent },
+  { path: 'welcome', component: MovieCardComponent },
   { path: 'movies', component: MovieCardComponent },
   { path: 'profile', component: UserProfileComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
